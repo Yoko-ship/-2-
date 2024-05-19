@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="city.js" defer></script>
+    <link rel="stylesheet" href="city.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <a href="https://dota2protracker.com/" class="counters"><h1>Контрипики</h1></a>
+        <a class="faq" href="https://dota2.ru/heroes/?ysclid=lwbzdrsc7g196496666">FAQ</a>
+    </header>
+    <body>
+        <div class="text">
+            <h1 class="h1">Dota 2 Counter picks</h1>
+            <p class="p1">Heroounters is a statistical website focused on <br>
+                showing counter-matchups between heroes for Dota 2!<br>
+                Data are from the past 1-2 months and based off Divine<br>
+                Immortal games using stratz API .<br>
+                Explore the best Dota 2 meta picks and Tier Lists</p>
+            <div class="menu">
+                <label>
+                    <p>Showing Dota 2 Counters and tier list</p>
+                    <!-- <input type="search" class="search" placeholder="Search heroes"> -->
+                        <button>All</button>
+                        <button class="pos1">1<img src="pos1.webp"></button>
+                        <button class="pos2">2<img src="pos2.webp"></button>
+                        <button class="pos3">3<img src="pos3.webp"></button>
+                        <button class="pos4">4<img src="pos4.webp" class=""></button>
+                        <button class="pos5">5<img src="pos5.webp"></button>
+                </label>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>INDEX</th>
+                        <th>HERO</th>
+                        <th>TIER</th>
+                        <th>MAIN POSITION</th>
+                        <th>LANES PLAYED</th>
+                        <th>Counter Picks</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    
+                    <tr class="supp5" id="pos5">
+                        <td>1</td>
+                        <td> Bane <img src="Bane_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>5</td>
+                        <td><img src="pos5.webp" class="imgur"></td>
+                        <td><img src="Shadow_Shaman_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="mid" id="pos2">
+                        <td>2</td>
+                        <td>Puck <img src="Puck_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos2.webp" class="imgur" class="pos1"></td>
+                        <td><img src="Earth_Spirit_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="off" id="pos3">
+                        <td>3</td>
+                        <td>Razor <img src="Razor_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td><img src="pos3.webp" class="imgur"></td>
+                        <td><img src="Morphling_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="supp4" id="pos4">
+                        <td>4</td>
+                        <td>Tiny <img src="Tiny_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>4</td>
+                        <td><img src="pos4.webp" class="imgur"></td>
+                        <td><img src="Undying_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="carry" id="pos1">
+                        <td>5</td>
+                        <td>Luna <img src="Luna_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos1.webp" class="imgur"></td>
+                        <td><img src="Venomancer_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="carry" id="pos1">
+                        <td>6</td>
+                        <td>Ghoul <img src="Lifestealer_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos1.webp" class="imgur"></td>
+                        <td><img src="Razor_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="carry" id="pos1">
+                        <td>7</td>
+                        <td>Morf <img src="Morphling_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos1.webp" class="imgur"></td>
+                        <td><img src="Anti-Mage_minimap_icon.png"></td>
+                    </tr>
+                    <tr class="carry" id="pos1">
+                        <td>8</td>
+                        <td>Anti-Mage <img src="Anti-Mage_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos1.webp" class="imgur"></td>
+                        <td><img src="Meepo_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos1" class="carry">
+                        <td>9</td>
+                        <td>Faceless-Void <img src="Faceless_Void_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>1</td>
+                        <td><img src="pos1.webp" class="imgur"></td>
+                        <td><img src="Pudge_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos2" class="mid">
+                        <td>10</td>
+                        <td>Zeus <img src="Zeus_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>2</td>
+                        <td><img src="pos2.webp" class="imgur"></td>
+                        <td><img src="Anti-Mage_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos2" class="mid">
+                        <td>11</td>
+                        <td>Pangolier <img src="Pangolier_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>2</td>
+                        <td><img src="pos2.webp" class="imgur"></td>
+                        <td><img src="Primal_Beast_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos2" class="mid">
+                        <td>12</td>
+                        <td>Primal Beast <img src="Primal_Beast_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>2</td>
+                        <td><img src="pos2.webp" class="imgur"></td>
+                        <td><img src="Bane_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos2" class="mid">
+                        <td>13</td>
+                        <td>Leshrac <img src="Leshrac_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>2</td>
+                        <td><img src="pos2.webp" class="imgur"></td>
+                        <td><img src="Anti-Mage_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos3" class="off">
+                        <td>14</td>
+                        <td>Slardar <img src="Slardar_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td><img src="pos3.webp" class="imgur"></td>
+                        <td><img src="Venomancer_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos3" class="off">
+                        <td>15</td>
+                        <td>Mars <img src="Mars_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td><img src="pos3.webp" class="imgur"></td>
+                        <td><img src="Meepo_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos3" class="off">
+                        <td>16</td>
+                        <td>Doom <img src="Doom_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td><img src="pos3.webp" class="imgur"></td>
+                        <td><img src="Zeus_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos4" class="supp4">
+                        <td>17</td>
+                        <td>Hoodwink <img src="Hoodwink_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>4</td>
+                        <td><img src="pos4.webp" class="imgur"></td>
+                        <td><img src="Bounty_Hunter_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos4" class="supp4">
+                        <td>18</td>
+                        <td>Bountey Hunter <img src="Bounty_Hunter_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>4</td>
+                        <td><img src="pos4.webp" class="imgur"></td>
+                        <td><img src="Tiny_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos5" class="supp5">
+                        <td>19</td>
+                        <td>Venomancer <img src="Venomancer_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>5</td>
+                        <td><img src="pos5.webp" class="imgur"></td>
+                        <td><img src="Bounty_Hunter_minimap_icon.png"></td>
+                    </tr>
+                    <tr id="pos5" class="supp5">
+                        <td>20</td>
+                        <td>Nature's Prophet <img src="Nature's_Prophet_minimap_icon.png"></td>
+                        <td>S</td>
+                        <td>5</td>
+                        <td><img src="pos5.webp" class="imgur"></td>
+                        <td><img src="Bounty_Hunter_minimap_icon.png"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</body>
+</html>
